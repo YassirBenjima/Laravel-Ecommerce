@@ -11,7 +11,24 @@
 |
 */
 
-Route::view('/', 'site.pages.homepage');
+// Route::view('/', 'site.pages.homepage');
+
+// use Illuminate\Routing\Route;
+
+// use App\Models\Category;
+
+use App\Models\Attribute;
+use App\Models\Product;
+
+Route::get('/', function(){
+    $prod = Product::all();
+    $attr = Attribute::all();
+    // dd($attr);
+    // dd($Prod);
+    return view('site.pages.homepage',['category'=>$prod, 'attribute' => $attr]);
+    // return to_route('site.pages.homepage');
+});
+
 Route::get('/category/{slug}', 'Site\CategoryController@show')->name('category.show');
 Route::get('/product/{slug}', 'Site\ProductController@show')->name('product.show');
 
