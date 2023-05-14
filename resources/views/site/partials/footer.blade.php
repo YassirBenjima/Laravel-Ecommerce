@@ -6,10 +6,10 @@
                 <aside class="col-sm-3 col-md-3 white">
                     <h5 class="title">Customer Services</h5>
                     <ul class="list-unstyled">
-                        <li> <a href="#">Help center</a></li>
-                        <li> <a href="#">Money refund</a></li>
-                        <li> <a href="#">Terms and Policy</a></li>
-                        <li> <a href="#">Open dispute</a></li>
+                        <li><a href="{{ url('/HelpCenter') }}">Help center</a></li>
+                        <li> <a href="{{ url('/Refund') }}">Money refund</a></li>
+                        <li> <a href="{{ url('/TermsandPolicy') }}">Terms and Policy</a></li>
+                        <li> <a href="{{url('/Opendispute')}}">Open dispute</a></li>
                     </ul>
                 </aside>
                 <aside class="col-sm-3  col-md-3 white">
@@ -36,9 +36,9 @@
                     <article class="white">
                         <h5 class="title">Contacts</h5>
                         <p>
-                            <strong>Phone: </strong> +123456789
+                            <strong>Phone: </strong> +212623401404
                             <br>
-                            <strong>Fax:</strong> +123456789
+                            <strong>Fax:</strong> +212623401404
                         </p>
 
                         <div class="btn-group white">
@@ -60,13 +60,13 @@
         <section class="footer-bottom row border-top-white">
             <div class="col-sm-6">
                 <p class="text-white-50"> Made with
-                    <3 <br> by Vosidiy M.</p>
+                    <3 <br> by Yassir & Amdjar</p>
             </div>
             <div class="col-sm-6">
                 <p class="text-md-right text-white-50">
                     Copyright &copy
                     <br>
-                    <a href="http://bootstrap-ecommerce.com" class="text-white-50">Bootstrap-ecommerce UI kit</a>
+                    <a href="http://bootstrap-ecommerce.com" class="text-white-50">ISTA NTIC SYBA</a>
                 </p>
             </div>
         </section>

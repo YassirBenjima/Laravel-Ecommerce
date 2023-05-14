@@ -28,6 +28,11 @@ Route::get('/', function(){
     return view('site.pages.homepage',['category'=>$prod, 'attribute' => $attr]);
     // return to_route('site.pages.homepage');
 });
+Route::view('/HelpCenter', 'site.pages.HelpCenter');
+Route::view('/Refund', 'site.pages.Refund');
+Route::view('/TermsandPolicy', 'site.pages.TermsandPolicy');
+Route::view('/Opendispute', 'site.pages.Opendispute');
+
 
 Route::get('/category/{slug}', 'Site\CategoryController@show')->name('category.show');
 Route::get('/product/{slug}', 'Site\ProductController@show')->name('product.show');
